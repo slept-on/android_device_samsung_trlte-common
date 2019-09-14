@@ -18,6 +18,8 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
+#pragma push_macro("PROPERTY_VALUE_MAX")
+
 #include <cutils/properties.h>
 #include <string.h>
 
@@ -43,5 +45,7 @@ static inline const char* BtmGetDefaultName()
 
 /* Handsfree device */
 #define BTA_DM_COD { 0x20, 0x04, 0x08 }
+
+#pragma pop_macro("PROPERTY_VALUE_MAX")
 
 #endif
