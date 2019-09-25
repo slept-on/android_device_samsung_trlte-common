@@ -168,10 +168,10 @@ LZMA_RAMDISK_TARGETS := recovery
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
 
 # SELinux
-include device/qcom/sepolicy-legacy/sepolicy.mk
+#include device/qcom/sepolicy-legacy/sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += \
-    $(COMMON_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += \
+#    $(COMMON_PATH)/sepolicy
 
 # Wifi
 BOARD_HAVE_SAMSUNG_WIFI := true
