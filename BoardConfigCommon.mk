@@ -19,6 +19,8 @@
 
 COMMON_PATH := device/samsung/trlte-common
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Architecture
 TARGET_CPU_VARIANT := krait
 
@@ -87,7 +89,7 @@ TARGET_HW_DISK_ENCRYPTION_PERF := false
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # First Model API LEVEL
-PRODUCT_SHIPPING_API_LEVEL := 23
+#PRODUCT_SHIPPING_API_LEVEL := 23
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += system/libhidl/vintfdata/manifest_healthd_exclude.xml
