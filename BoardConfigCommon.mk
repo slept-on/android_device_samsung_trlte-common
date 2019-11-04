@@ -89,9 +89,6 @@ TARGET_HW_DISK_ENCRYPTION_PERF := false
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 BOARD_ROOT_EXTRA_FOLDERS := firmware firmware-modem efs persist
 
-# First Model API LEVEL
-#PRODUCT_SHIPPING_API_LEVEL := 23
-
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += system/libhidl/vintfdata/manifest_healthd_exclude.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
