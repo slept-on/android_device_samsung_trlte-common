@@ -87,6 +87,7 @@ EXTENDED_FONT_FOOTPRINT := true
 TARGET_HW_DISK_ENCRYPTION := false
 TARGET_HW_DISK_ENCRYPTION_PERF := false
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+BOARD_ROOT_EXTRA_FOLDERS := firmware firmware-modem efs persist
 
 # First Model API LEVEL
 #PRODUCT_SHIPPING_API_LEVEL := 23
@@ -169,7 +170,7 @@ TARGET_NO_SENSOR_PERMISSION_CHECK := true
 
 # SELinux
 #include device/qcom/sepolicy-legacy/sepolicy.mk
-
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/temp
 #BOARD_SEPOLICY_DIRS += \
 #    $(COMMON_PATH)/sepolicy
 
